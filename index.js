@@ -10,8 +10,8 @@ const app = express();
 
 // middleware
 app.use(cors( {
-  origin:['http://localhost:5173'],
-//   origin: ['http://localhost:5173', '',
+//   origin:['http://localhost:5173'],
+  origin: ['http://localhost:5173', 'https://b8-a12-server-side.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
